@@ -18,7 +18,7 @@ class MyCustomLintCode extends DartLintRule {
 
   static const _code = LintCode(
     name: 'my_custom_lint_code',
-    problemMessage: 'THIS is the description of our custom lint',
+    problemMessage: 'This is the description of our custom lint',
     errorSeverity: ErrorSeverity.WARNING,
   );
 
@@ -29,6 +29,9 @@ class MyCustomLintCode extends DartLintRule {
     CustomLintContext context,
   ) {
     context.registry.addVariableDeclaration((node) {
+      final filePath = resolver.path;
+      if (!filePath.contains('lib')) return;
+
       reporter.atNode(node, code);
     });
   }

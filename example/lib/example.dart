@@ -1,11 +1,10 @@
 @deprecated
-void oldFunction() {}
+void deprecatedFunc() {}
 
 void main() {
-  // // a deprecated function returns an info-level diagnostic
-  // oldFunction();
+  deprecatedFunc();
 }
 
-// final myVar = 123;
-// final myVar2 = 456;
-// final myVar3 = myVar + myVar2;
+final myVar = 123;
+final myVar2 = 456;
+final myVar3 = myVar + myVar2;

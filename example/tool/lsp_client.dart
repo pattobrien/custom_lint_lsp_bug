@@ -14,7 +14,6 @@ import 'package:pub_semver/pub_semver.dart';
 
 /// A simple application that uses the analysis server to analyze a package.
 void main(List<String> args) async {
-  // args.add(".");
   args = ["."];
 
   var target = await parseArgs(args);
