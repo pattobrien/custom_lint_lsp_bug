@@ -1,0 +1,1 @@
+# sidecar-ai example repo

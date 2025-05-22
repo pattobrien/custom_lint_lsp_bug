@@ -1,0 +1,14 @@
+name: custom_lint_lsp_bug
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  analyzer: ^7.3.0
+  custom_lint: ^0.7.5
+  custom_lint_builder: ^0.7.5
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.24.0
